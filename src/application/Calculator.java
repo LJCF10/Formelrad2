@@ -60,7 +60,6 @@ public class Calculator {
 			StromausSpannungundWiderstand();
 		}
 		
-<<<<<<< HEAD
 		if(getWiderstand() == 0 && getSpannung() != 0 && getLeistung() != 0 ){
 			
 			WiderstandausSpannungundLeistung();
@@ -74,7 +73,7 @@ public class Calculator {
 		if(getWiderstand() == 0 && getSpannung() != 0 && getStrom() != 0 ){
 			
 			WiderstandausStromundSpannung();
-=======
+		}
 		//Ali
 		if(getLeistung() == 0 && getSpannung() == 0 && getWiderstand() != 0 && getStrom() != 0) {
 			WiderstandMalStromstaerkeHochZwei();
@@ -93,7 +92,6 @@ public class Calculator {
 		}
 		if(getStrom() == 0 && getSpannung() == 0 && getWiderstand() != 0 && getLeistung() != 0) {
 			SpannungDrei();
->>>>>>> 998a8301720f948787d3aff8afcb41c89ac1f95a
 		}
 				
 	}
