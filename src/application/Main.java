@@ -103,7 +103,7 @@ public class Main extends Application {
 				
 				txSpannung.setText(Double.toString(myCalculator.WiderstandMalStromstaerke()));
 				txSpannung.setText(Double.toString(myCalculator.LeistungDurchStromstaerke()));
-				
+				txSpannung.setText(Double.toString(myCalculator.SpannungDrei()));
 				
 				txStrom.setText(Double.toString(myCalculator.StromausLeistungundWiderstand()));
 				txStrom.setText(Double.toString(myCalculator.StromausLeistungundSpannung()));
