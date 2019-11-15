@@ -44,12 +44,45 @@ public class Calculator {
 	}
 
 	public void calculate() {
-		/* Hier auf Grund der vorhanden Werte entscheiden
-		 * welche Methode unten aufgerufen werden muss.
-		 */
+		
+		//Lenny
+		if(getStrom() == 0 && getLeistung() != 0 && getWiderstand() != 0 ){
+			StromausLeistungundWiderstand();
+		}
+		
+		if(getStrom() == 0 && getLeistung() != 0 && getSpannung() != 0 ){
+			
+			StromausLeistungundSpannung();
+		}
+		
+		if(getStrom() == 0 && getSpannung() != 0 && getWiderstand() != 0 ){
+			
+			StromausSpannungundWiderstand();
+		}
+				
+	}
+
+	//Lenny
+	public double StromausLeistungundWiderstand(){
+		
+		double zwischenres = getLeistung() / getWiderstand();
+		double res = Math.sqrt(zwischenres);
+		
+		return res;		
 	}
 	
-	/* Hier die Methoden mit den Formlen hinzufügen
-	 */
+	public double StromausLeistungundSpannung(){
+		
+		double res = getLeistung() / getSpannung();
+		
+		return res;		
+	}
+	
+	public double StromausSpannungundWiderstand(){
+		
+		double res = getSpannung() / getWiderstand();
+		
+		return res;		
+	}
 	
 }
