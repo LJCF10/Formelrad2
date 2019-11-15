@@ -70,6 +70,15 @@ public class Calculator {
 		if(getLeistung() == 0 && getStrom() == 0 && getSpannung() != 0 && getWiderstand() != 0) {
 			LeistungDrei();
 		}
+		if(getLeistung() == 0 && getSpannung() == 0 && getWiderstand() != 0 && getStrom() != 0) {
+			WiderstandMalStromstaerke();
+		}
+		if(getSpannung() == 0 && getWiderstand() == 0 && getLeistung() != 0 && getStrom() != 0) {
+			LeistungDurchStromstaerke();
+		}
+		if(getStrom() == 0 && getSpannung() == 0 && getWiderstand() != 0 && getLeistung() != 0) {
+			SpannungDrei();
+		}
 				
 	}
 
@@ -108,6 +117,19 @@ public class Calculator {
 	public double LeistungDrei() {
 		double zwischenresultat = getSpannung() * getSpannung();
 		double resultat = zwischenresultat / getWiderstand();
+		return resultat;
+	}
+	public double WiderstandMalStromstaerke() {
+		double resultat = getWiderstand() * getStrom();
+		return resultat;
+	}
+	public double LeistungDurchStromstaerke() {
+		double resultat = getLeistung() / getStrom();
+		return resultat;
+	}
+	public double SpannungDrei() {
+		double zwischenresultat = getLeistung() * getWiderstand();
+		double resultat = Math.sqrt(zwischenresultat);
 		return resultat;
 	}
 	
