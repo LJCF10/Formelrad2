@@ -73,6 +73,9 @@ public class Calculator {
 		if(getLeistung() == 0 && getSpannung() == 0 && getWiderstand() != 0 && getStrom() != 0) {
 			WiderstandMalStromstaerke();
 		}
+		if(getSpannung() == 0 && getWiderstand() == 0 && getLeistung() != 0 && getStrom() != 0) {
+			LeistungDurchStromstaerke();
+		}
 				
 	}
 
@@ -115,6 +118,10 @@ public class Calculator {
 	}
 	public double WiderstandMalStromstaerke() {
 		double resultat = getWiderstand() * getStrom();
+		return resultat;
+	}
+	public double LeistungDurchStromstaerke() {
+		double resultat = getLeistung() / getStrom();
 		return resultat;
 	}
 	
