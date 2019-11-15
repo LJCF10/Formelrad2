@@ -47,9 +47,21 @@ public class Calculator {
 		/* Hier auf Grund der vorhanden Werte entscheiden
 		 * welche Methode unten aufgerufen werden muss.
 		 */
+		if(getStrom() == 0 && getLeistung() != 0 && getWiderstand() != 0 ){
+			StromausLeistungundWiderstand();
+		}
+		
 	}
 	
 	/* Hier die Methoden mit den Formlen hinzufügen
 	 */
+	
+	public double StromausLeistungundWiderstand(){
+		
+		double zwischenres = getLeistung() / getWiderstand();
+		double res = Math.sqrt(zwischenres);
+		
+		return res;		
+	}
 	
 }
