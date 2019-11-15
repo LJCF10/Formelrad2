@@ -98,6 +98,7 @@ public class Main extends Application {
 						power, tension, current, resistence);
 					
 				txLeistung.setText(Double.toString(myCalculator.WiderstandMalStromstaerkeHochZwei()));
+				txLeistung.setText(Double.toString(myCalculator.SpannungMalStromstaerke()));
 				
 				txSpannung.setText(Double.toString(myCalculator.getSpannung()));
 				

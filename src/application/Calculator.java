@@ -64,6 +64,9 @@ public class Calculator {
 		if(getLeistung() == 0 && getSpannung() == 0 && getWiderstand() != 0 && getStrom() != 0) {
 			WiderstandMalStromstaerkeHochZwei();
 		}
+		if(getLeistung() == 0 && getWiderstand() == 0 && getStrom() != 0 && getSpannung() != 0) {
+			SpannungMalStromstaerke();
+		}
 				
 	}
 
@@ -93,6 +96,10 @@ public class Calculator {
 	public double WiderstandMalStromstaerkeHochZwei() {
 		double zwischenresultat = getStrom() * getStrom();
 		double resultat = getWiderstand() * zwischenresultat;
+		return resultat;
+	}
+	public double SpannungMalStromstaerke() {
+		double resultat = getSpannung() * getStrom();
 		return resultat;
 	}
 	
