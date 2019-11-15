@@ -64,6 +64,11 @@ public class Calculator {
 			
 			WiderstandausSpannungundLeistung();
 		}
+		
+		if(getWiderstand() == 0 && getStrom() != 0 && getLeistung() != 0 ){
+			
+			WiderstandausStromundSpannung();
+		}
 				
 	}
 
@@ -96,4 +101,11 @@ public class Calculator {
 		
 		return res;
 	}	
+	
+	public double WiderstandausStromundSpannung(){
+		
+		double res = leistung / (strom * strom) ;
+		
+		return res;
+	}
 }
