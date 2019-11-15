@@ -59,6 +59,21 @@ public class Calculator {
 			
 			StromausSpannungundWiderstand();
 		}
+		
+		if(getWiderstand() == 0 && getSpannung() != 0 && getLeistung() != 0 ){
+			
+			WiderstandausSpannungundLeistung();
+		}
+		
+		if(getWiderstand() == 0 && getStrom() != 0 && getLeistung() != 0 ){
+			
+			WiderstandausStromundLeistung();
+		}
+		
+		if(getWiderstand() == 0 && getSpannung() != 0 && getStrom() != 0 ){
+			
+			WiderstandausStromundSpannung();
+		}
 				
 	}
 
@@ -85,4 +100,24 @@ public class Calculator {
 		return res;		
 	}
 	
+	public double WiderstandausSpannungundLeistung(){
+		
+		double res = (spannung * spannung) / leistung;
+		
+		return res;
+	}	
+	
+	public double WiderstandausStromundLeistung(){
+		
+		double res = leistung / (strom * strom) ;
+		
+		return res;
+	}
+	
+	public double WiderstandausStromundSpannung(){
+		
+		double res = spannung / strom ;
+		
+		return res;
+	}
 }
