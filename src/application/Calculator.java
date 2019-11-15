@@ -60,6 +60,7 @@ public class Calculator {
 			StromausSpannungundWiderstand();
 		}
 		
+<<<<<<< HEAD
 		if(getWiderstand() == 0 && getSpannung() != 0 && getLeistung() != 0 ){
 			
 			WiderstandausSpannungundLeistung();
@@ -73,6 +74,26 @@ public class Calculator {
 		if(getWiderstand() == 0 && getSpannung() != 0 && getStrom() != 0 ){
 			
 			WiderstandausStromundSpannung();
+=======
+		//Ali
+		if(getLeistung() == 0 && getSpannung() == 0 && getWiderstand() != 0 && getStrom() != 0) {
+			WiderstandMalStromstaerkeHochZwei();
+		}
+		if(getLeistung() == 0 && getWiderstand() == 0 && getStrom() != 0 && getSpannung() != 0) {
+			SpannungMalStromstaerke();
+		}
+		if(getLeistung() == 0 && getStrom() == 0 && getSpannung() != 0 && getWiderstand() != 0) {
+			LeistungDrei();
+		}
+		if(getLeistung() == 0 && getSpannung() == 0 && getWiderstand() != 0 && getStrom() != 0) {
+			WiderstandMalStromstaerke();
+		}
+		if(getSpannung() == 0 && getWiderstand() == 0 && getLeistung() != 0 && getStrom() != 0) {
+			LeistungDurchStromstaerke();
+		}
+		if(getStrom() == 0 && getSpannung() == 0 && getWiderstand() != 0 && getLeistung() != 0) {
+			SpannungDrei();
+>>>>>>> 998a8301720f948787d3aff8afcb41c89ac1f95a
 		}
 				
 	}
@@ -82,7 +103,6 @@ public class Calculator {
 		
 		double zwischenres = getLeistung() / getWiderstand();
 		double res = Math.sqrt(zwischenres);
-		
 		return res;		
 	}
 	
@@ -100,6 +120,7 @@ public class Calculator {
 		return res;		
 	}
 	
+
 	public double WiderstandausSpannungundLeistung(){
 		
 		double res = (spannung * spannung) / leistung;
@@ -120,4 +141,34 @@ public class Calculator {
 		
 		return res;
 	}
+	
+	//Ali
+	public double WiderstandMalStromstaerkeHochZwei() {
+		double zwischenresultat = getStrom() * getStrom();
+		double resultat = getWiderstand() * zwischenresultat;
+		return resultat;
+	}
+	public double SpannungMalStromstaerke() {
+		double resultat = getSpannung() * getStrom();
+		return resultat;
+	}
+	public double LeistungDrei() {
+		double zwischenresultat = getSpannung() * getSpannung();
+		double resultat = zwischenresultat / getWiderstand();
+		return resultat;
+	}
+	public double WiderstandMalStromstaerke() {
+		double resultat = getWiderstand() * getStrom();
+		return resultat;
+	}
+	public double LeistungDurchStromstaerke() {
+		double resultat = getLeistung() / getStrom();
+		return resultat;
+	}
+	public double SpannungDrei() {
+		double zwischenresultat = getLeistung() * getWiderstand();
+		double resultat = Math.sqrt(zwischenresultat);
+		return resultat;
+	}
+	
 }

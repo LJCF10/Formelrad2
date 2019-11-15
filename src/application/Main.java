@@ -97,9 +97,13 @@ public class Main extends Application {
 				Calculator myCalculator = new Calculator(
 						power, tension, current, resistence);
 					
-				txLeistung.setText(Double.toString(myCalculator.getLeistung()));
+				txLeistung.setText(Double.toString(myCalculator.WiderstandMalStromstaerkeHochZwei()));
+				txLeistung.setText(Double.toString(myCalculator.SpannungMalStromstaerke()));
+				txLeistung.setText(Double.toString(myCalculator.LeistungDrei()));
 				
-				txSpannung.setText(Double.toString(myCalculator.getSpannung()));
+				txSpannung.setText(Double.toString(myCalculator.WiderstandMalStromstaerke()));
+				txSpannung.setText(Double.toString(myCalculator.LeistungDurchStromstaerke()));
+				txSpannung.setText(Double.toString(myCalculator.SpannungDrei()));
 				
 				txStrom.setText(Double.toString(myCalculator.StromausLeistungundWiderstand()));
 				txStrom.setText(Double.toString(myCalculator.StromausLeistungundSpannung()));
@@ -108,6 +112,10 @@ public class Main extends Application {
 				txWiderstand.setText(Double.toString(myCalculator.WiderstandausSpannungundLeistung()));
 				txWiderstand.setText(Double.toString(myCalculator.WiderstandausStromundLeistung()));
 				txWiderstand.setText(Double.toString(myCalculator.WiderstandausStromundSpannung()));
+
+				txWiderstand.setText(Double.toString(myCalculator.getWiderstand()));
+				
+
 				
 			});
 
