@@ -59,6 +59,17 @@ public class Calculator {
 			
 			StromausSpannungundWiderstand();
 		}
+		
+		//Ali
+		if(getLeistung() == 0 && getSpannung() == 0 && getWiderstand() != 0 && getStrom() != 0) {
+			WiderstandMalStromstaerkeHochZwei();
+		}
+		if(getLeistung() == 0 && getWiderstand() == 0 && getStrom() != 0 && getSpannung() != 0) {
+			SpannungMalStromstaerke();
+		}
+		if(getLeistung() == 0 && getStrom() == 0 && getSpannung() != 0 && getWiderstand() != 0) {
+			LeistungDrei();
+		}
 				
 	}
 
@@ -67,7 +78,6 @@ public class Calculator {
 		
 		double zwischenres = getLeistung() / getWiderstand();
 		double res = Math.sqrt(zwischenres);
-		
 		return res;		
 	}
 	
@@ -83,6 +93,22 @@ public class Calculator {
 		double res = getSpannung() / getWiderstand();
 		
 		return res;		
+	}
+	
+	//Ali
+	public double WiderstandMalStromstaerkeHochZwei() {
+		double zwischenresultat = getStrom() * getStrom();
+		double resultat = getWiderstand() * zwischenresultat;
+		return resultat;
+	}
+	public double SpannungMalStromstaerke() {
+		double resultat = getSpannung() * getStrom();
+		return resultat;
+	}
+	public double LeistungDrei() {
+		double zwischenresultat = getSpannung() * getSpannung();
+		double resultat = zwischenresultat / getWiderstand();
+		return resultat;
 	}
 	
 }
