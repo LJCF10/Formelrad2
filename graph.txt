@@ -1,0 +1,74 @@
+*   commit 25ddd391fed641ef5b070bbb7812d1340be49e3c (HEAD -> master)
+|\  Merge: 1cdeabf 2ba8d49
+| | Author: Dagonali <ali.spielt01@gmail.com>
+| | Date:   Thu Nov 21 23:09:37 2019 +0100
+| | 
+| |     Merge branch 'develop'
+| |   
+| *   commit 2ba8d493f66180278ecff0723a4f12031ef79b62 (origin/develop, develop, LeistungBerechnen)
+| |\  Merge: a60808e eec239a
+| | | Author: lenny cruzinha <cruzinha.lenny@gmail.com>
+| | | Date:   Fri Nov 15 14:10:22 2019 +0100
+| | | 
+| | |     Merge branch 'AmperBerechnen' into develop
+| | | 
+| | * commit eec239af7a666a052c10dcf8fd2b8fa6c3159ffd (origin/AmperBerechnen)
+| | | Author: lenny cruzinha <cruzinha.lenny@gmail.com>
+| | | Date:   Fri Nov 15 14:09:31 2019 +0100
+| | | 
+| | |     Implemented I from U and R
+| | | 
+| | * commit 47c009f255b02002b1f234581fe96c5b2ed41bdc
+| | | Author: lenny cruzinha <cruzinha.lenny@gmail.com>
+| | | Date:   Fri Nov 15 14:07:30 2019 +0100
+| | | 
+| | |     Implemented I from P and U
+| | | 
+| | * commit 5484fa4a7496ea0d3ae75c38eb7c3e679a43889d
+| |/  Author: lenny cruzinha <cruzinha.lenny@gmail.com>
+| |   Date:   Fri Nov 15 14:04:42 2019 +0100
+| |   
+| |       Implemented I from P and R
+| |   
+| *   commit a60808e43222ecf39baf649d9f0e156d363aac13
+| |\  Merge: 96a8e9d b9ed3a6
+| | | Author: lenny cruzinha <cruzinha.lenny@gmail.com>
+| | | Date:   Fri Nov 15 13:49:34 2019 +0100
+| | | 
+| | |     Merge branch 'IntegrateBaseProject' into develop
+| | | 
+| | * commit b9ed3a65c48a4ae8967eac7b533c19a45ebeb686 (origin/IntegrateBaseProject)
+| |/  Author: lenny cruzinha <cruzinha.lenny@gmail.com>
+| |   Date:   Fri Nov 15 13:48:57 2019 +0100
+| |   
+| |       Baseproject has been integrated
+| | 
+* | commit 1cdeabf521ebff1429642115799a29fcb1074196 (origin/master, origin/HEAD)
+| | Author: Dagonali <ali.spielt01@gmail.com>
+| | Date:   Thu Nov 21 23:06:07 2019 +0100
+| | 
+| |     edited Readme
+| | 
+* | commit 9be66565ad488fb55f7611a9082641ea17343db5
+| | Author: Dagonali <ali.spielt01@gmail.com>
+| | Date:   Thu Nov 21 23:05:16 2019 +0100
+| | 
+| |     edited Readme
+| | 
+* | commit f8cf6b1fc2c0524ada2056ae7b45a56870775a51
+| | Author: Dagonali <ali.spielt01@gmail.com>
+| | Date:   Thu Nov 21 23:03:51 2019 +0100
+| | 
+| |     added Readme
+| | 
+* | commit 335603428df336d7d7af446f95423be0d853b62e
+|/  Author: Dagonali <ali.spielt01@gmail.com>
+|   Date:   Thu Nov 21 23:01:34 2019 +0100
+|   
+|       added Readme
+| 
+* commit 96a8e9d553bb621b75d7b3213c52543d93735dc5
+  Author: LJCF10 <55856210+LJCF10@users.noreply.github.com>
+  Date:   Fri Nov 15 13:22:15 2019 +0100
+  
+      Initial commit
